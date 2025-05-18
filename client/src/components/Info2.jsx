@@ -10,27 +10,26 @@ export default function Info2() {
   const [response, setResponse] = useState("");
 
   const handleClick = async () => {
-    try {
-      const options = {
-        method: "GET",
-        url: "https://jsearch.p.rapidapi.com/search",
-        params: {
-          query: `${field} in ${location}`,
-          page: "1",
-          num_pages: "1",
-        },
-        headers: {
-          'x-rapidapi-key': 'a02b8d1ae2msh7a302518c8d67e2p1ca0b1jsn022aafb891af',
-          'x-rapidapi-host': 'jsearch.p.rapidapi.com'
-        }
-      };
-
-      const res = await axios.request(options);
-      setResponse(res);
-      console.log(res?.data);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
+    //   try {
+    //     const options = {
+    //       method: "GET",
+    //       url: "https://jsearch.p.rapidapi.com/search",
+    //       params: {
+    //         query: `${field} in ${location}`,
+    //         page: "1",
+    //         num_pages: "1",
+    //       },
+    //       headers: {
+    //         'x-rapidapi-key': 'a02b8d1ae2msh7a302518c8d67e2p1ca0b1jsn022aafb891af',
+    //         'x-rapidapi-host': 'jsearch.p.rapidapi.com'
+    //       }
+    //     };
+    //     const res = await axios.request(options);
+    //     setResponse(res);
+    //     console.log(res?.data);
+    //   } catch (error) {
+    //     console.error("Error fetching data:", error);
+    //   }
   };
 
   useEffect(() => {
