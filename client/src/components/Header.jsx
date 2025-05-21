@@ -269,8 +269,8 @@ import { toast } from "react-toastify";
 const Header = () => {
   const Links = [
     { name: "HOME", link: "/" },
-    { name: "ABOUT", link: "/" },
-    { name: "CONTACT US", link: "/" },
+    // { name: "ABOUT", link: "/" },
+    // { name: "CONTACT US", link: "/" },
   ];
 
   const [open, setOpen] = useState(false);

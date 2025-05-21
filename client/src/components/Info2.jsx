@@ -19,11 +19,21 @@ export default function Info2() {
             page: "1",
             num_pages: "1",
           },
+          // headers: {
+          //   "x-rapidapi-key":
+          //     "a02b8d1ae2msh7a302518c8d67e2p1ca0b1jsn022aafb891af",
+          //   "x-rapidapi-host": "jsearch.p.rapidapi.com",
+          // },
           headers: {
             "x-rapidapi-key":
-              "a02b8d1ae2msh7a302518c8d67e2p1ca0b1jsn022aafb891af",
+              "4fc1ea92ecmsh2e0c4f73700e278p18648fjsn02493bd8595f",
             "x-rapidapi-host": "jsearch.p.rapidapi.com",
           },
+          // headers: {
+          //   "x-rapidapi-key":
+          //     "9bd5ad8690mshee6f7ce276671a4p13444djsn28b4ece2f3af",
+          //   "x-rapidapi-host": "jsearch.p.rapidapi.com",
+          // },
         };
         const res = await axios.request(options);
         setResponse(res);
